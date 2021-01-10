@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_app</class>
+ <widget class="QWidget" name="form_app">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#form_app {
+	background-color: white;
+}</string>
+  </property>
+  <widget class="QPushButton" name="get_osk">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>201</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#get_osk {
+	background-color: rgb(85, 170, 255);
+	border: none;
+	border-radius: 3px;		
+	font: 75 10pt &quot;Arial&quot;;
+	color: white;
+}
+
+QPushButton#get_osk:hover {
+	border: 3px solid rgb(66, 131, 197);
+}
+
+QPushButton#get_osk:pressed {
+	border: 3px solid rgb(66, 131, 197);
+	font: 75 11pt &quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Сгенерировать оскорбление</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="select_lang_rus">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton#select_lang_rus{
+	color: rgb(85, 170, 255);
+	font: 75 10px &quot;Arial Black&quot;;
+}
+
+QRadioButton#select_lang_rus::indicator{
+	color: red;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Русский</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="select_lang_eng">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>70</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton#select_lang_eng {
+	color: rgb(85, 170, 255);
+	font: 75 10px &quot;Arial Black&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Английский</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text_language">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#text_language {
+	color: black;
+	font: 75 9pt &quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Выберите язык оскорбления</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="received_osk">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>221</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit#received_osk {
+	border:1px solid rgb(85, 170, 255);
+	border-radius: 3px;	
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
