@@ -37,4 +37,3 @@ ui.get_osk.clicked.connect( generation_osk )
 
 
 # Запуск приложения
-sys.exit(app.exec_())
